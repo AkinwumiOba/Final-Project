@@ -108,6 +108,8 @@
         border: none;
         color: var(--BColor);
         display: flex;
+        cursor: pointer;
+        margin-left: -10px;
         flex-direction: column;
        
     }
