@@ -90,16 +90,15 @@
         font-size: 20px;
         cursor: pointer;
         color: rgb(37, 37, 37);
-        margin-right: 10px;
+        margin-right: 20px;
       }
       
       #menu {
         list-style: none;
         padding: 0;
         margin: 0;
-        margin-top: 200%;
-        z-index: 1;
-        left: 0;
+        margin-top: 60%;
+        margin-right: 10px;
         background-color: #f0f0f0;
         border: 1px solid #ccc;
         -webkit-backdrop-filter: blur(5px);
@@ -121,7 +120,7 @@
       }
       
       #menu a:hover {
-        background-color: #ccc;
+        background-color: #277018;
         color: #fff;
       }
       
@@ -134,12 +133,6 @@
 .deptHead{
             display: none;
         }
-        .toggle{
-            height: 20px;
-            width: 20px;
-            margin-right: 10px;
-                cursor: pointer;
-            }
     }
 
     @media (width >= 640px) {
@@ -147,11 +140,17 @@
             max-width: 85%;
         }
 
-        
-        
-        .toggle{
+        .deptHead{
+            display: block;
+        }
+            
+        #menu-toggle{
             display: none;
-            }
+        }
+
+        #menu{
+            display: flex;
+        }
     }
 
     @media (width >= 768px) {
