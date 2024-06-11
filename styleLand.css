@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    font-family: var(--Content);
+}
+:root {
+    
+    --Heading: "Staatliches", sans-serif;
+    --Body: "Urbanist", sans-serif;
+    --BColor: rgb(37, 37, 37);
+   
+  }
+
+    body{
+        background-color: hsl(240, 3%, 93%);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+        font-family: "Urbanist", sans-serif;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    .logoHeader{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .deptHead{
+        color: rgb(37, 37, 37);
+        font-family: "Staatliches", sans-serif;
+        font-size: 20.7px;
+        line-height: 15px;
+    }
+
+    .uni{
+        font-family: "Urbanist";
+        color: rgb(37, 37, 37);
+        font-size: 8px;
+        letter-spacing: 5.45px;
+        text-transform: uppercase;
+    }
+
+    header nav ul{
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+        list-style: none;
+        font-size: 14px;
+        margin-right: 50px;
+    }
+
+    header nav a{
+        text-decoration: none;
+        color: rgb(37, 37, 37);
+
+    }
+
+    header nav a:hover {
+        color: #277018;
+        transform: scale(110%);
+    }
+
+    header nav ul .login{
+        color: rgb(37, 37, 37);
+        padding-block: 10px;
+    }
+
+    header nav ul .sign{
+        background-color: rgb(129, 27, 27);
+        color: rgb(255, 255, 255);
+        border-radius: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .logSec{
+        color: rgb(37, 37, 37);
+        margin-block: 160px;
+        padding-inline:50px;
+        text-align: center;
+        }
+
+
+    fieldset{
+        margin-block: 10px;
+        border: none;
+        color: var(--BColor);
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .box{
+        resize: none;
+        color: black;
+        margin-block: 7px;
+        border-radius: 10px;
+        box-shadow: none;
+        width: 300px;
+        height: 45px;
+        cursor: pointer;
+        margin-inline: auto;
+        padding-inline: 10px;
+        border: rgb(190, 190, 190) solid 1px;
+    }
+
+    fieldset #pass{
+        color: rgb(37, 37, 37);
+    }
+
+    button{
+        border: none;
+        border-radius: 10px;
+        width: 300px;
+        margin: auto;
+        margin-inline: auto;
+        height: 45px;
+        color: white;
+        cursor: pointer;
+        background-color:  rgb(129, 27, 27);
+    }
+
+    span{
+        color: #277018;
+    }
+
+    button:hover{
+        background-color:  rgb(80, 15, 15);
+    }
+
+    h1{
+        font-size: 50px;
+        font-family: "Staatliches", sans-serif;
+        color: rgb(129, 27, 27);
+    }
+
+    h2{
+        color: rgb(37, 37, 37);
+        margin-top: -50px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    form{
+        color: rgb(37, 37, 37);
+        margin-inline: auto;
+
+    }
+
+    label[for="pass"], label[for="user"] {
+        color: var(--BColor);
+    }
+      
+
+    .butLogin{
+        color: var(--BColor);
+        position: fixed;
+        bottom: 0;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    @media (width >= 425px) {
+        form{
+            width: 90%;
+        }
+
+    }
+
+    @media (width >= 640px) {
+        form{
+            max-width: 85%;
+        }
+    }
+
+    @media (width >= 768px) {
+        form{
+            max-width: 720px;
+        }
+    }
