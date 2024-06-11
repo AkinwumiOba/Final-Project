@@ -131,6 +131,9 @@
             width: 90%;
         }
 
+.deptHead{
+            display: none;
+        }
         .toggle{
             height: 20px;
             width: 20px;
@@ -143,6 +146,8 @@
         form{
             max-width: 85%;
         }
+
+        
         
         .toggle{
             display: none;
